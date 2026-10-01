@@ -23,7 +23,7 @@ In this lab from two truth tables we built the maxterm and minterm respectively 
 
 ### 1 - Explain the role of the Top Level file.
 
-The top level file is where modules are instantiated and also where these modules are wired to switches and LES's, in other words it’s where we define the translation between specific hardware components and how we plan to interact with those components in code. For this lab's top file, we defined what switches and LEDs we were going to use and what our variable names were going to be for each circuit module (A, B). 
+The top level file is where modules are instantiated and also where these modules are wired to switches and LEDs, in other words it’s where we define the translation between specific hardware components and how we plan to interact with those components in code. For this lab's top file, we defined what switches and LEDs we were going to use and what our variable names were going to be for each circuit module (A, B). 
 
 ### 2 - Explain the function of the Constraints file.
 
