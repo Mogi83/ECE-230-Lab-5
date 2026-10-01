@@ -7,7 +7,7 @@ module circuit_a(
     //output
     output Y
 );
-
+    assign Y =
     (A | B | C | D) & // M0
     (A | B | ~C | D) &  // M2
     (A | ~B | C | D) & // M4
