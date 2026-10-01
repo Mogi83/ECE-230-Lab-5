@@ -1,8 +1,26 @@
 module circuit_a(
-    // Declare inputs
-    // Declare Y output
+    //inputs
+    input A,
+    input B,
+    input C,
+    input D,
+    //output
+    output Y
 );
 
-    // Enter logic equation here
+    (A | B | C | D) &
+    (A | B | ~C | D) &
+    (A | ~B | C | D) &
+    (A | ~B | ~C | D) &
+    (~A | B | C | D) &
+    (~A | B | C | ~D) &
+    (~A | B | ~C | D) &
+    (~A | B | ~C |~ D) &
+    (~A | ~B | C | D) &
+    (~A | ~B | C | ~D) &
+    (~A | ~B | ~C | D) &
+    (~A | ~B | ~C | ~D) &
+
+    // ~A & A | D
 
 endmodule
