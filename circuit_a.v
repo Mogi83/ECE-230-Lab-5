@@ -19,7 +19,7 @@ module circuit_a(
     (~A | ~B | C | D) &
     (~A | ~B | C | ~D) &
     (~A | ~B | ~C | D) &
-    (~A | ~B | ~C | ~D) &
+    (~A | ~B | ~C | ~D)
 
     // ~A & A | D
 
