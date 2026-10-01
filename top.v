@@ -12,12 +12,16 @@ module top(
       .Y(led[0])
   );
 
+    // named connection between two points, carries whatever signal is driving it
+    wire a_out = led[0];
+    
 // circuit b
   circuit_b b_inst(
-    .YY(led[1]),
-    .B(sw[4]),
-    .C(sw[5]),
-    .D(sw[6])
+      .A(a_out),  // input A in circuit 'b' is the output of circuit 'a'
+      .B(sw[4]),
+      .C(sw[5]),
+      .D(sw[6]),
+      .Y(led[1])
   );
   
 endmodule
